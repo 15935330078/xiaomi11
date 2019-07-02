@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    /* .box{
+        width: 0;
+        border-top: 100px solid transparent ;
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+        border-bottom: 100px solid red;
+    } */
+    /* .box{
+        width: 0;
+        border-top:100px solid red;
+        border-left: 80px solid red;
+        border-right: 80px solid red;
+        border-bottom: 100px solid  transparent;
+    } */
+    .box{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        font-size:30px;
+        text-align: center;
+        line-height: 100px;
+        float: left;
+    }
+    .box1{
+        border: 5px solid yellow;
+        /* overflow: hidden; */
+    }
+    .box3{
+        width: 1000px;
+        height: 500px;
+        background-color: aqua;
+    }
+    /* .box5{
+        content: "";
+        display: block;
+        clear: both;
+    } */
+    .box1::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+</style>
+<body>
+    <div class="box1">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <!-- <div class="box5"></div> -->
+    </div>
+    <div class="box3"></div>
+</body>
+</html>
