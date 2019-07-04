@@ -194,7 +194,7 @@ a{
 }
 .jiantou2 .icon-jiantou{
     font-size: 28px;
-    text-align: center;
+    margin-left: 8px;
     line-height: 69px;
     color: #bbbbbb;
 }
@@ -493,9 +493,14 @@ a{
     margin-top: 18px;
 }
 .box-27{
+    width: 214px;
+    height: 18px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
     font-size: 12px;
     color:#b0b0b0;
-    text-align: center;
+    margin: 0 10px;
 }
 .box-28{
     font-size: 14px;
@@ -578,6 +583,7 @@ a{
     float: left;
     margin: 0 0 14px 14px;
     overflow: hidden;
+    box-sizing: border-box;
 }
 .box-41:hover{
     transform:translateY(-5px);
@@ -608,7 +614,7 @@ a{
 .box67{
     font-size: 12px;
     margin-top: 8px;
-    color: #b0b0b0;
+    color: #f5f5f5;
 }
 .box-42{
     width: 234px;
@@ -629,19 +635,29 @@ a{
     height: 150px;
 }
 .box-44{
+    width: 214px;
+    height: 20.67px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
     font-size: 14px;
     font-weight: 400;
     text-align: center;
     color:#333333;
     margin-top: 18px;
+    margin-left: 10px;
 }
 .box-45{
-    width: 234px;
-    height: 13px;
+    width: 214px;
+    height: 18px;
     font-size: 12px;
     text-align: center;
     color: #b0b0b0;
     margin:0 0 10px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    margin-left: 10px;
 }
 .box-46{
     font-size: 14px;
@@ -670,6 +686,9 @@ a{
     font-weight: 400;
     margin-top: 40px;
     margin-left: 30px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
 }
 .box-50{
     width: 94px;
@@ -745,6 +764,8 @@ a{
     float: left;
     margin-right: 14px;
     margin-bottom: 14px;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 .box-58:hover{
     transform:translateY(-5px);
@@ -765,16 +786,21 @@ a{
     height: 140px;
 }
 .box-61{
+    width: 214px;
+    height: 16px;
     font-size: 14px;
     color: #333333;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
 }
 .box-62{
     font-size: 14px;
     color: #ff6700;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 .box-63{
     font-size: 14px;
@@ -801,7 +827,7 @@ a{
     height: 415px;
     background-color: #fff;
     float: left;
-    margin: 0 14px 14px 0;
+    box-sizing: border-box;
 }
 .box-66:hover{
     transform:translateY(-5px);
@@ -821,11 +847,15 @@ a{
 }
 div.box-69{
     width: 240px;
-    height: 96px;
+    height: 56px;
     font-size: 14px;
     color: #333333;
     margin: 0 auto;
     margin-top: 28px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 20px;
 }
 .box-70{
     font-size: 12px;
@@ -863,11 +893,18 @@ div.box-69{
     box-shadow: 0 8px 15px 5px #b0b0b0 ;
     transition: 0.5s;
 }
-.box-75{
+.box-74:hover .boxleft{
+    background-color: rgba(0,0,0,0.1);
+}
+.box-74:hover .boxright{
+    background-color: rgba(0,0,0,0.1);
+}
+.box-206{
     margin-right: 0;
     border-top:1px solid blue;
 }
 .box-76{
+    position: relative;
     border-top:1px solid #ff6700;
 }
 .box-77{
@@ -955,6 +992,40 @@ div.box-69{
     display: inline-block;
     margin: 0 12px 0;
 }
+.boxleft{
+    width:20px ;
+    height: 48px;
+    background-color: #fff;
+    position: absolute;
+    bottom:190px;
+}
+.box-74 .boxleft:hover{
+    background-color: rgba(0,0,0,0.4);
+}
+.boxleft .icon-left{
+    font-size: 14px;
+    color: #fff;
+    line-height: 48px;
+    margin-left: 3px;
+}
+.boxright{
+    width:20px ;
+    height: 48px;
+    background-color: #fff;
+    float: right;
+    position: absolute;
+    right: 0;
+    bottom:190px;
+}
+.box-74 .boxright:hover{
+    background-color: rgba(0,0,0,0.4);
+}
+.boxright .icon-jiantou{
+    font-size: 14px;
+    color: #fff;
+    line-height: 48px;
+    margin-left: 3px;
+}
 .box81{
     color: #83c44e;
 }
@@ -1005,7 +1076,9 @@ div.box-69{
     float: left;
     margin-right: 14px;
     margin-bottom: 14px;
+    position: relative;
 }
+
 .box-95:hover{
     transform:translateY(-5px);
     box-shadow: 0 8px 15px 5px #b0b0b0 ;
@@ -1017,10 +1090,23 @@ div.box-69{
 .box-97{
     width: 296px;
     height: 180px;
+    position: relative;
+}
+.box-97:hover .icon-bofanganniu1{
+    color: #ff6700;
 }
 .box-97 img{
     width: 296px;
     height: 180px;
+}
+.box-97 .icon-bofanganniu1{
+    font-size: 30px;
+    position: absolute;
+    top:10px;
+    margin-top: 130px;
+    margin-left: 10px;
+    color: #fff;
+    
 }
 .box-98{
     width: 296px;
@@ -1038,17 +1124,155 @@ div.box-69{
     color: #b0b0b0;
     text-align: center;
 }
-.box-101{
-    width: 1226px;
-    height: 500px;
-    margin: 0 auto;
-    margin-top: 50px;
-}
-.box-101 img{
-    width: 1226px;
-    height: 500px;
-}
 .box-102{
-    width: 100%;
+    width: 1228px;
     background-color: #ffffff;
+    margin: 0 auto;
+    margin-top: 40px;
 }
+.ddz{
+    width: 1226px;
+    height: 272px;
+}
+.ddz .dds{
+    width: 100%;
+    height: 80px;
+    padding: 27px 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid#e0e0e0;
+}
+.dds2{
+    width: 1226px;
+    height: 192px;
+    padding: 40px 0px;
+    box-sizing: border-box;
+}
+.ddz .dz1{
+    float: left;
+    width: 242.73px;
+    height: 25px;
+    text-align: center;
+    border-right: 1px solid#e0e0e0;
+}
+.ddz .dz1 i{
+    font-size: 24px;
+    vertical-align: -2px;
+}
+.ddz .dz1:hover{
+    color: #ff6700;
+    cursor: pointer;
+}
+.ddz .dz11{
+    border-right: none;
+}
+.ddz .dds2 .sh{
+    width: 160px;
+    height: 112px;
+    float: left;
+}
+.ddz .dds2 .sh dt{
+    margin-bottom:25px;
+    margin-left: 15px;
+    font-size: 14px;
+    color: #424242;
+}
+.ddz .dds2 .sh dd{
+    font-size: 12px;
+    color: #757575;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.ddz .dds2 .sh dd:hover{
+    color: #ff6700;
+    cursor: pointer;
+}
+.ddz .dds2 .sh1{
+    width: 252px;
+    height: 112px;
+    float: right;
+    border-left: 1px solid#e0e0e0;
+}
+.ddz .sh1 p{
+    font-size: 22px;
+    text-align: center;
+    color:#ff6700;
+}
+.ddz .sh1 .sh11{
+    text-align: center;
+    font-size: 12px;
+    color:#616161;
+}
+.ddz .sh1 .sh12{
+    text-align: center;
+    font-size: 12px;
+    color:#616161;
+    margin-bottom: 16px;
+}
+.ddz .sh1 .sh13{
+    width: 120px;
+    height: 30px;
+    border: 1px solid#ff6700;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 12px;
+    color: #FF6700;
+    line-height: 28px;
+}
+.ddz .sh1 .sh13 i{
+    font-size: 14px;
+}
+.ddz .sh1 .sh13:hover{
+    color: #ffffff;
+    background-color: #FF6700;
+    cursor: pointer;
+}
+.js{
+    width: 1226px;
+    height: 210px;
+    padding: 30px 0;
+    box-sizing: border-box;
+}
+.js .js1{
+    width: 57px;
+    height: 57px;
+    background-color: #FF6700;
+    background-image:url(../img/1.png)
+}
+.js .js2{
+    width: 1159px;
+    float: left;
+    margin-left: 65px;
+}
+.js a{
+    font-size: 12px;
+    color: #757575;
+}
+.js span{
+    color: #b0b0b0;
+    font-size: 12px;
+}
+.js .js2 .js3{
+    font-size: 12px;
+    color: #b0b0b0;
+}
+.js a:hover{
+    color:#FF6700;
+    cursor: pointer;
+}
+.js .js3:hover{
+    cursor: pointer;
+}
+.tb{
+    width: 1226px;
+    height: 28px;
+    background: #F5F5F5;
+    margin-top: 30px;
+    padding: 0 0 0 67px;
+    box-sizing: border-box;
+}
+.tb .tb1{
+    width: 85px;
+    height: 28px;
+    float: left;
+}
+
